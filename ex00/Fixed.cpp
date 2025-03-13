@@ -6,7 +6,7 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 16:22:17 by akostian          #+#    #+#             */
-/*   Updated: 2025/03/10 16:47:39 by akostian         ###   ########.fr       */
+/*   Updated: 2025/03/10 17:21:58 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 Fixed::Fixed()
 {
 	std::cout << "Default constructor called\n";
-	raw = 0x00000000;
+	raw = 0b00000000000000000000000000000000;
 }
 
 Fixed::Fixed(const Fixed& other)
