@@ -6,7 +6,7 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 16:37:46 by akostian          #+#    #+#             */
-/*   Updated: 2025/05/15 14:16:46 by akostian         ###   ########.fr       */
+/*   Updated: 2025/05/15 16:41:30 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 #ifndef FIXED_HPP
 # define FIXED_HPP
+
+# define DO_PRINT_DEBUG 0
 
 class Fixed {
 	private:

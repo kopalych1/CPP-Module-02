@@ -6,7 +6,7 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 16:22:15 by akostian          #+#    #+#             */
-/*   Updated: 2025/05/15 14:14:07 by akostian         ###   ########.fr       */
+/*   Updated: 2025/05/15 16:51:14 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,10 @@ int	main( void ) {
 	testFixed(Fixed(12.33f));
 	testFixed(Fixed(12.63f));
 	testFixed(Fixed(0));
-	testFixed(Fixed(1234.4321f));
+	testFixed(Fixed(12));
+	testFixed(Fixed(-12));
+	testFixed(Fixed(1));
+	testFixed(Fixed(-1));
 
 	std::cout << YEL"Copy constructor test: " CRESET << "\n";
 	Fixed a(33);
