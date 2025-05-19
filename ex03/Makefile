@@ -6,7 +6,7 @@
 #    By: akostian <akostian@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/10 14:47:56 by akostian          #+#    #+#              #
-#    Updated: 2025/05/19 21:42:13 by akostian         ###   ########.fr        #
+#    Updated: 2025/05/19 21:59:38 by akostian         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ NAME				= BSP
 # VPATH				= src
 
 SRC_DIR				= .
-SRCS				= main.cpp Fixed.cpp
+SRCS				= main.cpp Fixed.cpp Point.cpp bsp.cpp
 
 INC_DIR				= .
 INCLUDES			= -I$(INC_DIR)
