@@ -6,7 +6,7 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 16:22:17 by akostian          #+#    #+#             */
-/*   Updated: 2025/05/15 16:36:22 by akostian         ###   ########.fr       */
+/*   Updated: 2025/05/19 21:18:23 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,6 +80,86 @@ Fixed	Fixed::operator/(Fixed const& other) const
 	Fixed	ret;
 		ret.raw = this->raw / other.toFloat();
 	return ret;
+}
+
+
+// Pre-increment
+Fixed&	Fixed::operator++()
+{
+	this->raw++;
+	return *this;
+}
+// Post-increment
+Fixed	Fixed::operator++(int)
+{
+	Fixed	ret(*this);
+	this->operator++();
+	return ret;
+}
+// Pre-decrement
+Fixed&	Fixed::operator--()
+{
+	this->raw--;
+	return *this;
+}
+// Post-decrement
+Fixed	Fixed::operator--(int)
+{
+	Fixed	ret(*this);
+	this->operator--();
+	return ret;
+}
+
+
+bool	Fixed::operator>(Fixed const& other) const
+{
+	return this->raw > other.raw;
+}
+bool	Fixed::operator<(Fixed const& other) const
+{
+	return this->raw < other.raw;
+}
+bool	Fixed::operator>=(Fixed const& other) const
+{
+	return this->raw >= other.raw;
+}
+bool	Fixed::operator<=(Fixed const& other) const
+{
+	return this->raw <= other.raw;
+}
+bool	Fixed::operator==(Fixed const& other) const
+{
+	return this->raw == other.raw;
+}
+bool	Fixed::operator!=(Fixed const& other) const
+{
+	return this->raw != other.raw;
+}
+
+
+Fixed&			Fixed::min(Fixed& a, Fixed& b)
+{
+	if (a < b)
+		return a;
+	return b;
+}
+const Fixed&	Fixed::min(const Fixed& a, const Fixed& b)
+{
+	if (a < b)
+		return a;
+	return b;
+}
+Fixed&			Fixed::max(Fixed& a, Fixed& b)
+{
+	if (a > b)
+		return a;
+	return b;
+}
+const Fixed&	Fixed::max(const Fixed& a, const Fixed& b)
+{
+	if (a > b)
+		return a;
+	return b;
 }
 
 
